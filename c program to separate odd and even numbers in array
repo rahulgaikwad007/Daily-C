@@ -1,0 +1,53 @@
+/* This code is belongs to Rahul Gaikwad. The engineering student from India.
+I uploding this code as a reference. */
+
+
+#include<stdio.h>                                                         //header files
+
+int main()
+{
+    int a[5],b[5],c[5];                                                   //declaring array
+    int i,j=0,k=0,n;
+
+    printf("enter how many no you want to check\n");
+    scanf("%d",&n);
+
+    //taking input from user for array
+    printf("enter the values that you want to check\n");
+    for(i=0;i<n;i++)
+    {
+       scanf("%d",&a[i]);
+    }
+
+    //saperating the even and odd numbers in array
+    for(i=0;i<n;i++)
+    {
+
+
+      if(a[i]%2==0)
+      {
+
+         b[j]=a[i];
+         j++;
+      }
+      else
+      {
+        c[k]=a[i];
+        k++;
+      }
+
+    }
+
+    //print the output
+    printf("the even values are\n");
+    for(i=0;i<j;i++)
+    {
+      printf("%d\n", b[i]);
+    }
+
+    printf("the odd values are\n");
+    for(i=0;i<k;i++)
+    {
+      printf("%d\n", c[i]);
+    }
+}
