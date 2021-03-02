@@ -1,0 +1,49 @@
+/* This code is belongs to Rahul Gaikwad. The engineering student from India.
+I uploding this code as a reference. */
+
+
+#include<stdio.h>
+
+int main()
+{
+  int a[10],t[10];
+  int i,j,n,c=0;
+
+  printf("how many numbers you wants to add in array:\n");
+  scanf("%d",&n);
+
+  printf("enter the %d numbers that you want to add in array:\n",n);
+  for(i=0;i<n;i++)
+  {
+     scanf("%d", &a[i]);
+  }
+
+
+  for(i=0;i<n;i++)
+  {
+     c=1;
+     for(j=i+1;j<n;j++)
+     {
+        if(a[i]==a[j])
+        {
+          c++;
+          t[j]=0;
+        }
+     }
+
+     if(t[i]!=0)
+     {
+
+        t[i]=c;
+     }
+  }
+
+  printf("the frequency of all element in array\n");
+  for(i=0;i<n;i++)
+  {
+     if(t[i]!= 0)
+     {
+        printf("%d occure %d times\n",a[i],t[i]);
+     }
+  }
+}
