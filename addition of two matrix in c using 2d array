@@ -1,0 +1,57 @@
+
+
+
+
+#include<stdio.h>
+
+int main()
+{
+  printf("------------Daily-C------------");
+  int a[100][100], b[100][100], sum[100][100];
+  int i,j,x,y;
+
+  printf("Enter the dimention(row*column) of matrics:\n");
+  scanf("%d%d",&x,&y);
+
+  printf("enter first %d*%d matrics\n\n",x,y);
+  for(i=0; i<x;i++)
+  {
+     for(j=0;j<y;j++)
+     {
+        printf("enter %d%d element: ",i+1,j+1);
+        scanf("  %d",&a[i][j]);
+     }
+  }
+
+  printf("enter second %d*%d matrics:\n\n",x,y);
+  for(i=0; i<x;i++)
+  {
+     for(j=0;j<y;j++)
+     {
+        printf("enter %d%d element: ",i+1,j+1);
+        scanf("  %d",&b[i][j]);
+
+     }
+  }
+
+  for(i=0; i<x;i++)
+  {
+     for(j=0;j<y;j++)
+     {
+        sum[i][j]=a[i][j]+b[i][j];
+     }
+  }
+
+  printf("sum of two martics is\n");
+  for(i=0;i<x;i++)
+  {
+     for(j=0;j<y;j++)
+     {
+        printf(" %d  ",sum[i][j]);
+        if (j == y - 1)
+        {
+            printf("\n\n");
+        }
+     }
+  }
+}
