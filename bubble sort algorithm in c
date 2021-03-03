@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+    printf("-------------Daily-C----------------")
+    int a[100];
+    int n,i,j,t;
+
+    printf("\n\nhow mainy no you have to sort\n");
+    scanf("%d",&n);
+
+    //taking input numbers
+    printf("enter the %d numbers for sorting\n");
+    for(i=0;i<n;i++)
+    {
+       scanf("%d",&a[i]);
+    }
+
+    for(i=0;i<n;i++)
+    {
+       for(j=0;j<n-i-1;j++)   //the last no is already sorted
+       {
+
+          if(a[j]>a[j+1])  //swapping the numbers
+           {
+             t=a[j];
+             a[j]=a[j+1];
+             a[j+1]=t;
+           }
+       }
+
+    }
+
+    //print sorted numbers
+    printf("the sorted list is:\n");
+    for(i=0;i<n;i++)
+    {
+      printf("%d\n",a[i]);
+    }
+}
