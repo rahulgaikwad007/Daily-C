@@ -6,10 +6,12 @@ I uploding this code as a reference. */
 
 int main()
 {
+    printf("--------------Daily-C--------------");
+
     int a[5],b[5],c[5];                                                   //declaring array
     int i,j=0,k=0,n;
 
-    printf("enter how many no you want to check\n");
+    printf("\n\nenter how many no you want to check\n");
     scanf("%d",&n);
 
     //taking input from user for array
