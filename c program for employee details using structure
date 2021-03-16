@@ -53,6 +53,10 @@ int main()
 
         printf("ID \t: ");
         printf("%d \n",employees[i].ID);
+        
+        printf("age \t: ");
+        printf("%d \n",employees[i].age);
+
 
         printf("Salary \t: ");
         printf("%d \n",employees[i].Salary);
